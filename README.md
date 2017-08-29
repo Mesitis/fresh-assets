@@ -1,1 +1,3 @@
-# fresh-assets
+### Fresh Assets
+
+> Assets including logo & background images
