@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Canopy User Agreement</title><style>
+  /* cspell:disable-file */
+  /* webkit printing magic: print all background colors */
+  html {
+    -webkit-print-color-adjust: exact;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  @media only screen {
+    body {
+      margin: 2em auto;
+      max-width: 900px;
+      color: rgb(55, 53, 47);
+    }
+  }
+  
+  body {
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  
+  a,
+  a.visited {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  .pdf-relative-link-path {
+    font-size: 80%;
+    color: #444;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+  }
+  
+  h1 {
+    font-size: 1.875rem;
+    margin-top: 1.875rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+  }
+  
+  .source {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 1.5em;
+    word-break: break-all;
+  }
+  
+  .callout {
+    border-radius: 3px;
+    padding: 1rem;
+  }
+  
+  figure {
+    margin: 1.25em 0;
+    page-break-inside: avoid;
+  }
+  
+  figcaption {
+    opacity: 0.5;
+    font-size: 85%;
+    margin-top: 0.5em;
+  }
+  
+  mark {
+    background-color: transparent;
+  }
+  
+  .indented {
+    padding-left: 1.5em;
+  }
+  
+  hr {
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 1px;
+    visibility: visible;
+    border: none;
+    border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  @media only print {
+    img {
+      max-height: 100vh;
+      object-fit: contain;
+    }
+  }
+  
+  @page {
+    margin: 1in;
+  }
+  
+  .collection-content {
+    font-size: 0.875rem;
+  }
+  
+  .column-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    padding: 0 1em;
+  }
+  
+  .column:first-child {
+    padding-left: 0;
+  }
+  
+  .column:last-child {
+    padding-right: 0;
+  }
+  
+  .table_of_contents-item {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.3;
+    padding: 0.125rem;
+  }
+  
+  .table_of_contents-indent-1 {
+    margin-left: 1.5rem;
+  }
+  
+  .table_of_contents-indent-2 {
+    margin-left: 3rem;
+  }
+  
+  .table_of_contents-indent-3 {
+    margin-left: 4.5rem;
+  }
+  
+  .table_of_contents-link {
+    text-decoration: none;
+    opacity: 0.7;
+    border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid rgba(55, 53, 47, 0.09);
+    border-collapse: collapse;
+  }
+  
+  table {
+    border-left: none;
+    border-right: none;
+  }
+  
+  th,
+  td {
+    font-weight: normal;
+    padding: 0.25em 0.5em;
+    line-height: 1.5;
+    min-height: 1.5em;
+    text-align: left;
+  }
+  
+  th {
+    color: rgba(55, 53, 47, 0.6);
+  }
+  
+  ol,
+  ul {
+    margin: 0;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
+  }
+  
+  li > ol:first-child,
+  li > ul:first-child {
+    margin-block-start: 0.6em;
+  }
+  
+  ul > li {
+    list-style: disc;
+  }
+  
+  ul.to-do-list {
+    padding-inline-start: 0;
+  }
+  
+  ul.to-do-list > li {
+    list-style: none;
+  }
+  
+  .to-do-children-checked {
+    text-decoration: line-through;
+    opacity: 0.375;
+  }
+  
+  ul.toggle > li {
+    list-style: none;
+  }
+  
+  ul {
+    padding-inline-start: 1.7em;
+  }
+  
+  ul > li {
+    padding-left: 0.1em;
+  }
+  
+  ol {
+    padding-inline-start: 1.6em;
+  }
+  
+  ol > li {
+    padding-left: 0.2em;
+  }
+  
+  .mono ol {
+    padding-inline-start: 2em;
+  }
+  
+  .mono ol > li {
+    text-indent: -0.4em;
+  }
+  
+  .toggle {
+    padding-inline-start: 0em;
+    list-style-type: none;
+  }
+  
+  /* Indent toggle children */
+  .toggle > li > details {
+    padding-left: 1.7em;
+  }
+  
+  .toggle > li > details > summary {
+    margin-left: -1.1em;
+  }
+  
+  .selected-value {
+    display: inline-block;
+    padding: 0 0.5em;
+    background: rgba(206, 205, 202, 0.5);
+    border-radius: 3px;
+    margin-right: 0.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    white-space: nowrap;
+  }
+  
+  .collection-title {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  
+  .page-description {
+    margin-bottom: 2em;
+  }
+  
+  .simple-table {
+    margin-top: 1em;
+    font-size: 0.875rem;
+    empty-cells: show;
+  }
+  .simple-table td {
+    height: 29px;
+    min-width: 120px;
+  }
+  
+  .simple-table th {
+    height: 29px;
+    min-width: 120px;
+  }
+  
+  .simple-table-header-color {
+    background: rgb(247, 246, 243);
+    color: black;
+  }
+  .simple-table-header {
+    font-weight: 500;
+  }
+  
+  time {
+    opacity: 0.5;
+  }
+  
+  .icon {
+    display: inline-block;
+    max-width: 1.2em;
+    max-height: 1.2em;
+    text-decoration: none;
+    vertical-align: text-bottom;
+    margin-right: 0.5em;
+  }
+  
+  img.icon {
+    border-radius: 3px;
+  }
+  
+  .user-icon {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+  }
+  
+  .user-icon-inner {
+    font-size: 0.8em;
+  }
+  
+  .text-icon {
+    border: 1px solid #000;
+    text-align: center;
+  }
+  
+  .page-cover-image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: 30vh;
+  }
+  
+  .page-header-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-header-icon-with-cover {
+    margin-top: -0.72em;
+    margin-left: 0.07em;
+  }
+  
+  .page-header-icon img {
+    border-radius: 3px;
+  }
+  
+  .link-to-page {
+    margin: 1em 0;
+    padding: 0;
+    border: none;
+    font-weight: 500;
+  }
+  
+  p > .user {
+    opacity: 0.5;
+  }
+  
+  td > .user,
+  td > time {
+    white-space: nowrap;
+  }
+  
+  input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 0.6em;
+    vertical-align: middle;
+  }
+  
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .image {
+    border: none;
+    margin: 1.5em 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+  
+  .code,
+  code {
+    background: rgba(135, 131, 120, 0.15);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 85%;
+    tab-size: 2;
+  }
+  
+  code {
+    color: #eb5757;
+  }
+  
+  .code {
+    padding: 1.5em 1em;
+  }
+  
+  .code-wrap {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  
+  .code > code {
+    background: none;
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+  }
+  
+  blockquote {
+    font-size: 1.25em;
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 3px solid rgb(55, 53, 47);
+  }
+  
+  .bookmark {
+    text-decoration: none;
+    max-height: 8em;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+  
+  .bookmark-title {
+    font-size: 0.85em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 1.75em;
+    white-space: nowrap;
+  }
+  
+  .bookmark-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bookmark-info {
+    flex: 4 1 180px;
+    padding: 12px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bookmark-image {
+    width: 33%;
+    flex: 1 1 180px;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    border-radius: 1px;
+  }
+  
+  .bookmark-description {
+    color: rgba(55, 53, 47, 0.6);
+    font-size: 0.75em;
+    overflow: hidden;
+    max-height: 4.5em;
+    word-break: break-word;
+  }
+  
+  .bookmark-href {
+    font-size: 0.75em;
+    margin-top: 0.25em;
+  }
+  
+  .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+  .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+  .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+  .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+  .pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+  .pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+  .pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+  .pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+  .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+  .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+  .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+  .pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+  .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+  .pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+  .pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+  .pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+  .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+  .pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+  .pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+  .pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+  .highlight-default {
+    color: rgba(50, 48, 44, 1);
+  }
+  .highlight-gray {
+    color: rgba(120, 119, 116, 1);
+    fill: rgba(120, 119, 116, 1);
+  }
+  .highlight-brown {
+    color: rgba(159, 107, 83, 1);
+    fill: rgba(159, 107, 83, 1);
+  }
+  .highlight-orange {
+    color: rgba(217, 115, 13, 1);
+    fill: rgba(217, 115, 13, 1);
+  }
+  .highlight-yellow {
+    color: rgba(203, 145, 47, 1);
+    fill: rgba(203, 145, 47, 1);
+  }
+  .highlight-teal {
+    color: rgba(68, 131, 97, 1);
+    fill: rgba(68, 131, 97, 1);
+  }
+  .highlight-blue {
+    color: rgba(51, 126, 169, 1);
+    fill: rgba(51, 126, 169, 1);
+  }
+  .highlight-purple {
+    color: rgba(144, 101, 176, 1);
+    fill: rgba(144, 101, 176, 1);
+  }
+  .highlight-pink {
+    color: rgba(193, 76, 138, 1);
+    fill: rgba(193, 76, 138, 1);
+  }
+  .highlight-red {
+    color: rgba(212, 76, 71, 1);
+    fill: rgba(212, 76, 71, 1);
+  }
+  .highlight-default_background {
+    color: rgba(50, 48, 44, 1);
+  }
+  .highlight-gray_background {
+    background: rgba(248, 248, 247, 1);
+  }
+  .highlight-brown_background {
+    background: rgba(244, 238, 238, 1);
+  }
+  .highlight-orange_background {
+    background: rgba(251, 236, 221, 1);
+  }
+  .highlight-yellow_background {
+    background: rgba(251, 243, 219, 1);
+  }
+  .highlight-teal_background {
+    background: rgba(237, 243, 236, 1);
+  }
+  .highlight-blue_background {
+    background: rgba(231, 243, 248, 1);
+  }
+  .highlight-purple_background {
+    background: rgba(248, 243, 252, 1);
+  }
+  .highlight-pink_background {
+    background: rgba(252, 241, 246, 1);
+  }
+  .highlight-red_background {
+    background: rgba(253, 235, 236, 1);
+  }
+  .block-color-default {
+    color: inherit;
+    fill: inherit;
+  }
+  .block-color-gray {
+    color: rgba(120, 119, 116, 1);
+    fill: rgba(120, 119, 116, 1);
+  }
+  .block-color-brown {
+    color: rgba(159, 107, 83, 1);
+    fill: rgba(159, 107, 83, 1);
+  }
+  .block-color-orange {
+    color: rgba(217, 115, 13, 1);
+    fill: rgba(217, 115, 13, 1);
+  }
+  .block-color-yellow {
+    color: rgba(203, 145, 47, 1);
+    fill: rgba(203, 145, 47, 1);
+  }
+  .block-color-teal {
+    color: rgba(68, 131, 97, 1);
+    fill: rgba(68, 131, 97, 1);
+  }
+  .block-color-blue {
+    color: rgba(51, 126, 169, 1);
+    fill: rgba(51, 126, 169, 1);
+  }
+  .block-color-purple {
+    color: rgba(144, 101, 176, 1);
+    fill: rgba(144, 101, 176, 1);
+  }
+  .block-color-pink {
+    color: rgba(193, 76, 138, 1);
+    fill: rgba(193, 76, 138, 1);
+  }
+  .block-color-red {
+    color: rgba(212, 76, 71, 1);
+    fill: rgba(212, 76, 71, 1);
+  }
+  .block-color-default_background {
+    color: inherit;
+    fill: inherit;
+  }
+  .block-color-gray_background {
+    background: rgba(248, 248, 247, 1);
+  }
+  .block-color-brown_background {
+    background: rgba(244, 238, 238, 1);
+  }
+  .block-color-orange_background {
+    background: rgba(251, 236, 221, 1);
+  }
+  .block-color-yellow_background {
+    background: rgba(251, 243, 219, 1);
+  }
+  .block-color-teal_background {
+    background: rgba(237, 243, 236, 1);
+  }
+  .block-color-blue_background {
+    background: rgba(231, 243, 248, 1);
+  }
+  .block-color-purple_background {
+    background: rgba(248, 243, 252, 1);
+  }
+  .block-color-pink_background {
+    background: rgba(252, 241, 246, 1);
+  }
+  .block-color-red_background {
+    background: rgba(253, 235, 236, 1);
+  }
+  .select-value-color-uiBlue { background-color: undefined; }
+  .select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+  .select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+  .select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+  .select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+  .select-value-color-transparentGray { background-color: undefined; }
+  .select-value-color-translucentGray { background-color: undefined; }
+  .select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+  .select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+  .select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+  .select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+  .select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+  .select-value-color-pageGlass { background-color: undefined; }
+  .select-value-color-washGlass { background-color: undefined; }
+  
+  .checkbox {
+    display: inline-flex;
+    vertical-align: text-bottom;
+    width: 16;
+    height: 16;
+    background-size: 16px;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+  
+  .checkbox-on {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+  }
+  
+  .checkbox-off {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+  }
+    
+  </style></head><body><article id="1d50b172-a8bf-8080-b1aa-c2d7cfdc0949" class="page sans"><header><h1 class="page-title"><strong>Canopy User Agreement</strong></h1><p class="page-description"></p></header><div class="page-body"><p id="1d50b172-a8bf-804a-a1c3-fba24fc9e3bc" class=""><strong>Last Updated:</strong> Apr 15, 2025</p><hr id="1d50b172-a8bf-807d-9e37-db6b711862ad"/><h3 id="1d50b172-a8bf-802f-9f3c-e2fcf0c24ad5" class=""><strong>Introduction</strong></h3><p id="1d50b172-a8bf-804e-9cf7-cff1953d3f1d" class="">This User Agreement (&quot;Agreement&quot;) governs your access to and use of the <strong>Canopy Platform</strong> (&quot;Platform&quot;), a software solution that offers automated wealth data aggregation and portfolio visualization. By accessing the Platform, you agree to comply with this Agreement. If you do not agree, do not use the Platform.</p><hr id="1d50b172-a8bf-80df-9597-c81c54166d17"/><h3 id="1d50b172-a8bf-806c-afc9-e62f6b1ea0b0" class=""><strong>Definitions</strong></h3><p id="1d60b172-a8bf-8085-b51d-feb132276a04" class="">The following definitions apply in this Agreement:</p><ul id="1d60b172-a8bf-804c-858d-d55656f24054" class="bulleted-list"><li style="list-style-type:disc">“Additional Fee” means the fee for any additional service provided by Canopy as agreed between Canopy and the Business Subscriber from time to time;</li></ul><ul id="1d60b172-a8bf-804c-9767-ccfe3adfab73" class="bulleted-list"><li style="list-style-type:disc">&quot;Anonymous User Policy&quot; means Canopy’ policy to not request Personally Identifiable Information from End Users of the Service, as set out in the Privacy Statement;</li></ul><ul id="1d60b172-a8bf-8018-a1e3-eb6e3850c394" class="bulleted-list"><li style="list-style-type:disc">“Application(s)” means the html-based computer program(s), smart phone, tablet and/or personal computer application(s) and/or other software program(s) developed, owned and/or made available by Canopy, from time to time, in connection with the Service;</li></ul><ul id="1d60b172-a8bf-804a-bf89-d38ad2ed2afe" class="bulleted-list"><li style="list-style-type:disc">“Billing Cycle” means the billing cycle for the continuation of the Enterprise Subscription, as set out in the Annex to this Agreement;</li></ul><ul id="1d60b172-a8bf-8092-9266-ee3b481eb571" class="bulleted-list"><li style="list-style-type:disc">“Business Day” means a day, other than a Saturday, Sunday or public holiday, on which banks are open for non-automated commercial business in Singapore;</li></ul><ul id="1d60b172-a8bf-8060-bc05-f365e0c9ff26" class="bulleted-list"><li style="list-style-type:disc">“Customer Support” means technical assistance, responses to Customer inquiries and other support provided by Canopy regarding the use of the Application(s) and Service to the Business Subscriber, via phone, audio and video teleconferencing, email or other electronic communication, and on premise at Canopy’s offices during the Customer Support Operating Hours.</li></ul><ul id="1d60b172-a8bf-80c5-af00-cae83d7ee2fb" class="bulleted-list"><li style="list-style-type:disc">“Customer Support Operating Hours” means from 09:00 to 18:00 Singapore time, on Singapore Business Days, or otherwise advised to the Business Subscriber from time to time.</li></ul><ul id="1d60b172-a8bf-801a-acb7-d0404f273075" class="bulleted-list"><li style="list-style-type:disc">“End User” means any person or entity who is a customer or client of the Business Subscriber and who is using the Service solely for its own direct and personal benefit or business-end use, and not for the direct or indirect benefit of any other person or entity;</li></ul><ul id="1d60b172-a8bf-80e0-bc79-d82e1177aa85" class="bulleted-list"><li style="list-style-type:disc">“End User Personal Financial Data” means personal financial account statements and/or other financial data of End Users;</li></ul><ul id="1d60b172-a8bf-80b2-9d6e-faa0aa5694b1" class="bulleted-list"><li style="list-style-type:disc">&quot;Intellectual Property Rights&quot; means all present and future copyright, trademark rights, service mark rights, trade secret rights, patent rights, moral rights and other intellectual property and proprietary rights recognized in any jurisdiction;</li></ul><ul id="1d60b172-a8bf-80ce-a71f-d95f3c0c6261" class="bulleted-list"><li style="list-style-type:disc">&quot;Meta Data&quot; means anonymised statistical collective data derived from End Users and produced by Canopy as part of the Service;</li></ul><ul id="1d60b172-a8bf-8075-ae7d-d3aa1494b306" class="bulleted-list"><li style="list-style-type:disc">&quot;Minimum Subscription Period&quot; means the minimum period for which the Business Subscriber is required to subscribe the Service;</li></ul><ul id="1d60b172-a8bf-80bb-8b76-d1701397be5c" class="bulleted-list"><li style="list-style-type:disc">&quot;Personally Identifiable Information&quot; means any data or information by which an End User may be personally identified;</li></ul><ul id="1d60b172-a8bf-80a1-941b-d46fd306a4b4" class="bulleted-list"><li style="list-style-type:disc">&quot;Privacy Statement&quot; means the terms of Canopy’s privacy policy as set out at<br/><br/><a href="https://www.canopy.cloud/terms-and-privacy">https://www.canopy.cloud/terms-and-privacy</a> which addresses how Canopy handles and protects Personally Identifiable Information;</li></ul><ul id="1d60b172-a8bf-80b2-b3d6-ea5ecc09ccee" class="bulleted-list"><li style="list-style-type:disc">“Processing Service” means the service involving the extraction, uploading and/or reconciliation of information derived from End User Personal Financial Data undertaken by Canopy;</li></ul><ul id="1d60b172-a8bf-8056-8351-cea4263bd14d" class="bulleted-list"><li style="list-style-type:disc">“Service” means the financial account aggregation, portfolio visualization, analytics and reporting service, hosted on Canopy’s servers, pursuant to which information extracted from End User Personal Financial Data is processed, using the Applications, into an aggregated portfolio, to facilitate the analysis of such data and the generation of reports to the End Users;</li></ul><ul id="1d60b172-a8bf-809f-9d85-f399232cbf6f" class="bulleted-list"><li style="list-style-type:disc">&quot;Subscription Fee&quot; means the fees (excluding any taxes and/or duties) payable by the Business Subscriber to Canopy in connection with the Enterprise Subscription, as set out in the Annex to this Agreement;</li></ul><ul id="1d60b172-a8bf-80b6-abc6-cb3986d9a705" class="bulleted-list"><li style="list-style-type:disc">“Us“, capitalized or otherwise, means Canopy. “We” and “Our“, capitalized or otherwise, have<br/>corresponding meanings.<br/></li></ul><ul id="1d60b172-a8bf-80b1-87ef-f6ad3f13c24d" class="bulleted-list"><li style="list-style-type:disc">&quot;Website&quot;, singular or plural, means all Websites and Web pages operated by Canopy in relation to the Service and hosted under the canopy.cloud and other domains owned by Canopy and the Business Subscriber.</li></ul><ul id="1d60b172-a8bf-80e6-9477-e3097de373da" class="bulleted-list"><li style="list-style-type:disc">“You”, capitalized or otherwise, means the Business Subscriber. “Your“, capitalized or otherwise, has a corresponding meaning.</li></ul><hr id="1d50b172-a8bf-8078-a103-dac48c0caa83"/><h3 id="1d50b172-a8bf-8024-b11b-c8aed6df9e15" class=""><strong>Eligibility</strong></h3><ul id="1d50b172-a8bf-807e-94b8-ee52c3e8d791" class="bulleted-list"><li style="list-style-type:disc">Users must be (i) at least 18 years old, or (ii) a legally authorized entity.</li></ul><ul id="1d50b172-a8bf-8038-a15b-c0a89c768459" class="bulleted-list"><li style="list-style-type:disc">Family offices and advisors must ensure their clients consent to data aggregation and analysis.</li></ul><hr id="1d50b172-a8bf-801e-a2fe-e4a1a9b01366"/><h3 id="1d50b172-a8bf-80df-ab80-d523b5ad64d4" class=""><strong>Services Access</strong></h3><ul id="1d60b172-a8bf-807f-b26e-d3f15c97c9b6" class="bulleted-list"><li style="list-style-type:disc">(a) The Business Subscriber warrants and undertakes to Canopy, for and on behalf of itself and each of its End Users, that they shall, throughout the Term:<ul id="1d60b172-a8bf-80c9-885b-d739235302d9" class="bulleted-list"><li style="list-style-type:circle">(i) ensure that their username and/or password required to access the Website,<br/>Applications and/or Service is kept secure and confidential at all times and will make<br/>every reasonable effort to prevent unauthorised third parties from accessing the<br/>Website, Applications and/or Service using their username and/or password;<br/></li></ul><ul id="1d60b172-a8bf-8059-a47a-cc07cc99d0e8" class="bulleted-list"><li style="list-style-type:circle">(ii) in the event of any unauthorized use of their username and/or password or any other<br/>security breach, immediately notify Canopy and take all other actions as may be<br/>necessary or required by Canopy to maintain the security of the Website, Applications<br/>and/or Service;<br/></li></ul><ul id="1d60b172-a8bf-8033-a423-ee368d240217" class="bulleted-list"><li style="list-style-type:circle">(iii) not attempt to undermine the security or integrity of Canopy’s computer systems and/ornetworks where the Service is hosted, or take or permit any action which may impair the functionality of the Website, Applications and/or Service;</li></ul><ul id="1d60b172-a8bf-809c-9819-d28a6a16917e" class="bulleted-list"><li style="list-style-type:circle">(iv) not attempt to copy, reproduce, reverse engineer or decompile any computer program, design, functionality and any other component of the Website, Applications and/or Service;</li></ul><ul id="1d60b172-a8bf-8077-ac7e-d6447d2e31a5" class="bulleted-list"><li style="list-style-type:circle">(v) not attempt to gain access to any materials other than those which it is expressly<br/>permitted and authorised to access; and<br/></li></ul><ul id="1d60b172-a8bf-808e-a147-f1e813ccbfd8" class="bulleted-list"><li style="list-style-type:circle">(vi) not transmit or upload to the Website, Applications and/or Service any files containing<br/>malicious computer codes or any software that may damage Canopy’s computer<br/>systems or networks or any other person&#x27;s computing devices, or any content that may<br/>be offensive or any material or data in violation of any law.<br/></li></ul></li></ul><ul id="1d60b172-a8bf-8009-8eec-c6de9869520f" class="bulleted-list"><li style="list-style-type:disc">(b) The Business Subscriber warrants to Canopy for and on behalf of itself and each of its End Users that any information or data that they provide to Canopy pursuant to this Agreement or in connection with the Services is owned by them, is true and correct, does not infringe the rights, including any intellectual property rights or confidentiality rights, of any person and that they are fully entitled and/or authorised to furnish such information or data to Canopy, for purposes of this Agreement.</li></ul><hr id="1d50b172-a8bf-80b8-83a6-c151e0bf07e1"/><h3 id="1d50b172-a8bf-803b-a5ca-e705452c248a" class=""><strong>Prohibited Activities/Usage Limitations </strong></h3><ul id="1d60b172-a8bf-801e-a824-e4da60b523e9" class="bulleted-list"><li style="list-style-type:disc">(a) The Business Subscriber may only use the Enterprise Subscription to allow its End Users to access and use the Website, Applications and/or Service, in connection with the Business<br/>Subscriber’s own lawful business operations.<br/></li></ul><ul id="1d60b172-a8bf-80d7-b87e-c0c1280e211e" class="bulleted-list"><li style="list-style-type:disc">(b) In particular, the Business Subscriber may not license, sell, lease, outsource, share or permit the use of the Website, Applications and/or Service to, with or by any third party who is not its End User and/or for use by any such third party’s own End Users, whether or not such actions are undertaken for financial gain.</li></ul><ul id="1d60b172-a8bf-801e-8029-d8f498c15728" class="bulleted-list"><li style="list-style-type:disc">(c) Any usage by the Business Subscriber of its Enterprise Subscription beyond the aforesaid<br/>limitations will result in the immediate termination of the Enterprise Subscription, without prejudice to Canopy’s rights to maintain a claim against the Business Subscriber for any<br/>consequential loss and/or damage.<br/></li></ul><hr id="1d60b172-a8bf-80c4-a162-ef377c493d17"/><h3 id="1d50b172-a8bf-8000-8715-f39ec867ad51" class=""><strong>Data Safety</strong></h3><ul id="1d50b172-a8bf-80c1-a8f9-cba53a726398" class="bulleted-list"><li style="list-style-type:disc"><strong>What We do</strong></li></ul><p id="1d60b172-a8bf-80bd-9311-d272048c0c10" class="">We are committed to the safety and security of your data and information. We place your data and information in a protected and secure database and deploy firewalls, SSL and encryption technology for data transmission. We subject ourselves to regular checks by third party security evaluation specialists and restrict access to customer data and information by Our staff on a need-to-know basis only. We also implement and maintain procedures to monitor staff activity regarding such access. On top of these measures, We implement the Anonymous User Policy as mentioned earlier.</p><p id="1d60b172-a8bf-8090-961e-e049b9192974" class="">The aforementioned security efforts do not preclude Us from the possibility of fraud, cyber-attacks, such as hacking, spyware and viruses, and We do not warrant that Our servers or network will be immune from such attacks. We are not liable for any loss or damage arising from such risks.</p><ul id="1d60b172-a8bf-808d-bc87-dc7f31a445e5" class="bulleted-list"><li style="list-style-type:disc"><strong>What you should and should not do</strong></li></ul><p id="1d60b172-a8bf-805a-b303-c800ed3dd0df" class="">You should ensure that your username, password, and if applicable, two factor authentication device required to access the Service is kept secure and confidential at all times and make every reasonable effort to prevent unauthorized third parties from accessing the Service using your user ID, password, and if applicable, two factor authentication device. In public areas, you should exercise caution and not leave your computer unattended whilst logged into your account. You should also avoid using public computer terminals to access your Canopy account, unless you can adequately verify that the terminal is free from spyware and that you can erase all of your information upon exiting the terminal. We will not be liable for any loss or damage arising from unauthorized access to your account due to any failure to comply with these precautions.</p><ul id="1d60b172-a8bf-80b6-97bf-fbaf2f19c9e9" class="bulleted-list"><li style="list-style-type:disc"><strong>Other Data</strong></li></ul><p id="1d60b172-a8bf-802a-9809-d92e6983f276" class="">Canopy may record certain non-personal information such as Website usage and browsing activity, data displayed or clicked on (such as UI elements), and others (such as IP address, cookie ID, and referrer URL). Along with cookies, Canopy may also use third-party tracking technology, such as Google Analytics, to record similar information regarding you and your activity on the Canopy Website. We may grant access to your data and information to certain trusted third party services providers that We work with, but only to perform the service on Our behalf with restricted access to customer data and information on a need-to-know basis only, and in compliance with this Privacy Statement.</p><ul id="1d60b172-a8bf-807c-bb68-e5c6c9c5befc" class="bulleted-list"><li style="list-style-type:disc"><strong>Data Retention</strong></li></ul><p id="1d60b172-a8bf-802f-9554-f9a681317088" class="">We will delete your original Personal Financial Data within a reasonable time after the relevant financial information has been extracted and processed into Our database for the purpose of generating reports. We will retain your account information for as long as you use Canopy. If you decide to stop the service, We will delete all such data within a reasonable time after the termination of the service, subject to retention for purposes of complying with applicable laws, resolving disputes, enforcing the terms of Our agreement with you and protecting Canopy’s intellectual property rights.</p><ul id="1d60b172-a8bf-807e-8e9f-f730a36ce07e" class="bulleted-list"><li style="list-style-type:disc"><strong>Changes</strong></li></ul><p id="1d60b172-a8bf-80d4-b4f1-c2f663dd4be1" class="">By using Canopy, you agree to the terms of this Privacy Statement. We may revise the terms of this Privacy Statement from time to time and will always present the most up-to-date version on Our Website. It is your responsibility to periodically review and keep yourself appraised of the latest terms but, if any revision meaningfully affects your rights, We will take reasonable steps to notify you of such changes.</p><p id="1d60b172-a8bf-80b3-aef1-ed66e2946f77" class="">Please inform Us of any changes to your email address and other communication preferences and We will take steps to update Our records after receiving such notification.</p><hr id="1d50b172-a8bf-8055-9c61-e56167a135a0"/><h3 id="1d50b172-a8bf-80ff-9803-cd95fcfa866f" class=""><strong>Ownership and Rights </strong></h3><ul id="1d60b172-a8bf-80f2-b552-fc88d83f9ac7" class="bulleted-list"><li style="list-style-type:disc">8.1 Data Provided by End Users<ul id="1d60b172-a8bf-80df-8df2-fd50877df5e0" class="bulleted-list"><li style="list-style-type:circle">(a) As detailed in the Anonymous User Policy, Canopy does not require End Users to provide Canopy with their Personally Identifiable Information in order to use the Service;</li></ul><ul id="1d60b172-a8bf-806d-934a-e8a17632b8bc" class="bulleted-list"><li style="list-style-type:circle">(b) Any End User Personal Financial Data provided to Canopy, or to which Canopy is otherwise authorised to access, is and shall remain the property of the relevant End User;</li></ul><ul id="1d60b172-a8bf-80d2-8043-e44941e927e5" class="bulleted-list"><li style="list-style-type:circle">(c) During the Term, the Business Subscriber undertakes to procure that its End Users grant Canopy a licence to use, copy, transmit, store and back-up their End User Personal Financial Data or any part thereof for purposes of providing the Service and/or for any other purpose(s) contemplated by this Agreement;</li></ul><ul id="1d60b172-a8bf-8068-be95-c21733ce5268" class="bulleted-list"><li style="list-style-type:circle">(d) For privacy, security and/or other operational reasons, all End User Personal Financial Data in the original form received by Canopy may be deleted without being backed-up by Canopy after such data has been processed for purposes of the Service;</li></ul><ul id="1d60b172-a8bf-807f-a888-d1b96acf284b" class="bulleted-list"><li style="list-style-type:circle">(e) Subject to clause 8.1(f) below, in the event the Agreement is terminated for any reason, Canopy will use best efforts to delete the End User Personal Financial Data, both in its original form (if it has not already been deleted) and in its processed form, within a reasonable time, however it is understood that it may not be always possible to delete all data from all Canopy servers and back-up storage; and</li></ul><ul id="1d60b172-a8bf-8019-8724-ca8d760226b8" class="bulleted-list"><li style="list-style-type:circle">(f) Canopy may retain all or any part of the End User Financial Data, and, in certain cases, may disclose the same to third parties, where necessary to comply with any applicable laws and/or legal obligations to which Canopy may be subject and/or for purposes of resolving disputes,enforcing the terms of this Agreement or protecting Canopy’s Intellectual Property Rights.</li></ul></li></ul><ul id="1d60b172-a8bf-80be-9026-c70b7e7addb0" class="bulleted-list"><li style="list-style-type:disc">8.2 Canopy’s Intellectual Property Rights<ul id="1d60b172-a8bf-80ca-96fb-c45c2db5be87" class="bulleted-list"><li style="list-style-type:circle">(a) All Intellectual Property Rights arising in or in relation to the Website, Applications and Service, including, but not limited to, any embedded software and technology and its “look and feel” (such as text, graphics, images, illustrations, logos, button icons), as well as any material, customized reports, Meta Data, photographs, videos, tutorials, editorial content, notices and other content contained or referenced therein, other than End User Personal Financial Data, are and shall at all times remain the property of Canopy.</li></ul><ul id="1d60b172-a8bf-806b-9cb5-c3dbd0fe1373" class="bulleted-list"><li style="list-style-type:circle">(b) During the Term of this Agreement, Canopy grants the End Users of the Business Subscriber a non-exclusive, limited, royalty-free, revocable license to use its Website, Applications and/or Service solely for their own direct and personal benefit or business-end purposes.</li></ul><ul id="1d60b172-a8bf-804f-b316-dda85170bfc5" class="bulleted-list"><li style="list-style-type:circle">(c) The Business Subscriber acknowledges and agrees and undertakes to procure that its End Users acknowledge and agree that the `Canopy’ brand name and related logos are trademarks and/or service marks of Canopy and may not be used by the Business Subscriber or any of its End Users, otherwise than for the purposes contemplated by this Agreement, without Canopy’s prior written consent.</li></ul><ul id="1d60b172-a8bf-8056-b289-c776bab9509f" class="bulleted-list"><li style="list-style-type:circle">(d) Any distribution, reprint or electronic reproduction of the content of and/or contained within the Website, Applications and/or Service, in whole or in part, is strictly prohibited without Canopy’s prior written consent.</li></ul></li></ul><hr id="1d50b172-a8bf-8060-9864-db4d940bb93f"/><h3 id="1d50b172-a8bf-80b7-91dc-fab000e76ac5" class=""><strong>Disclaimers/No Financial Advice</strong></h3><ul id="1d50b172-a8bf-80e1-9e44-c3477f653920" class="bulleted-list"><li style="list-style-type:disc">The Business Subscriber understands and agrees and undertakes to procure that its End Users understand and agree that any reports, analyses and/or other content provided or generated by Canopy pursuant to the Service are for general information purposes only and do not constitute financial advice and may not be used by the End Users to make any financial or investment decisions, which decisions should and must, at all times, be based on independent research and analysis.</li></ul><ul id="1d50b172-a8bf-80ca-9e43-ca1d9fa0639a" class="bulleted-list"><li style="list-style-type:disc">The Business Subscriber also understands and agrees and undertakes to procure that its End<br/>Users understand and agree that Canopy makes no investment recommendations or offers to<br/>any person or entity to subscribe for any investment products.<br/></li></ul><hr id="1d50b172-a8bf-80f9-9897-f27ba8ec9086"/><h3 id="1d50b172-a8bf-8017-88f5-f2dcc375d6d9" class=""><strong>Limitation of Liability</strong></h3><ul id="1d60b172-a8bf-8065-9d93-d1d7dbe23b56" class="bulleted-list"><li style="list-style-type:disc">11.1 To the maximum extent permitted by law, Canopy will not be liable to the Business Subscriber or to any of its End Users for any loss (including loss of information, data, revenues, profits or savings) or damage resulting, directly or indirectly, from any use of, or reliance on the Website, Applications and/or Service, whether caused by negligence or otherwise, and the Business Subscriber and/or its End Users shall assume sole responsibility for any results obtained from their use of the Service and/or any conclusions drawn from such use.</li></ul><ul id="1d60b172-a8bf-80c1-a19e-ff9c169b5876" class="bulleted-list"><li style="list-style-type:disc">11.2 Without limiting clause 11.1 above, if the Business Subscriber or any of its End Users suffer any loss or damage as a result of Canopy’s negligence or any failure on its part to comply with any of its obligations under this Agreement, the Business Subscriber agrees and undertakes to procure that each of its End Users shall agree that Canopy’s aggregate liability in respect of any and all of such claims shall, in any event, not exceed the lower of the aggregate or prorated Subscription Fees paid by the Business Subscriber to Canopy over the 3 months’ period preceding the date that any such claim first accrued.</li></ul><hr id="1d50b172-a8bf-80d2-b74a-c4ef2f3e0332"/><h3 id="1d50b172-a8bf-80a4-a1ae-c582c7a93eb0" class=""><strong>Termination</strong></h3><ul id="1d60b172-a8bf-80df-a9cf-cbab6023a90a" class="bulleted-list"><li style="list-style-type:disc">6.1This Agreement shall commence on the date of its execution and, subject to payment of the Subscription Fee, shall automatically renew at the end of each applicable Billing Cycle, unless earlier terminated by the Business Subscriber pursuant to clause 6.2 or otherwise, by either Party, in accordance with the terms of this Agreement (“Term”). Automatic renewal is not applicable to trials.</li></ul><ul id="1d60b172-a8bf-80cd-b51d-dacb8446bab1" class="bulleted-list"><li style="list-style-type:disc">6.2 The Business Subscriber may terminate this Agreement by giving Canopy written notice to that effect at least 10 (ten) business days prior to the expiry of any current Billing Cycle. If a Minimum SubscriptionPeriod applies to the Business Subscriber’s Enterprise Subscription, the Business Subscriber will be required to pay an amount equivalent to the Subscription Fee for the remainder of the MinimumSubscription Period.</li></ul><ul id="1d60b172-a8bf-8004-b970-e9a54167dbe2" class="bulleted-list"><li style="list-style-type:disc">6.3 Canopy may immediately terminate this Agreement, by written notice to that effect to the Business Subscriber, in the event of:<ul id="1d60b172-a8bf-80ad-9007-d52bbbba4d58" class="bulleted-list"><li style="list-style-type:circle">(a) any breach of the terms of this Agreement by the Business Subscriber, or any of its End Users, which, in the reasonable opinion of Canopy, is not capable of being rectified;</li></ul><ul id="1d60b172-a8bf-8002-a386-d5c7a78c3051" class="bulleted-list"><li style="list-style-type:circle">(b) any breach of the terms of this Agreement by the Business Subscriber, or any of its End Users, which is rectifiable but remains unrectified for 7 days or more after the Business Subscriber has received written notice from Canopy requiring it to be rectified; </li></ul><ul id="1d60b172-a8bf-80a1-ac02-fd02f6805a31" class="bulleted-list"><li style="list-style-type:circle">(c) any use the Website, Applications and/or Service by the Business Subscriber or any of its End Users in a manner that exposes or may expose Canopy to legal liability or disrupts or may disrupt the operation or performance of the Website, Applications and/or Service, or any other Business Subscribers’ and/or End Users&#x27; use thereof.</li></ul></li></ul><hr id="1d50b172-a8bf-804e-897a-f45792cd2b6a"/><h3 id="1d50b172-a8bf-8018-aee1-f652d4583397" class=""><strong>Governing Law &amp; Disputes</strong></h3><ul id="1d50b172-a8bf-80ab-b4e7-ee7c30a47abd" class="bulleted-list"><li style="list-style-type:disc"><strong>Governing Law</strong>: This Agreement is governed by the laws of [<em>Insert Jurisdiction</em>].</li></ul><ul id="1d50b172-a8bf-80bc-9957-dd2c77cb80d1" class="bulleted-list"><li style="list-style-type:disc"><strong>Dispute Resolution</strong>: Disputes will be resolved through binding arbitration in Singapore under [<em>Insert Rules</em>].</li></ul><hr id="1d50b172-a8bf-800b-8975-e3ecb28dcf07"/><h3 id="1d50b172-a8bf-804d-a290-cb81fbec539d" class=""><strong>Amendments</strong></h3><p id="1d50b172-a8bf-8048-bc5a-e4442ee8acd8" class="">Canopy may update this Agreement by posting a revised version on the Platform. Continued use constitutes acceptance.</p><hr id="1d50b172-a8bf-80f4-a67a-e753a1b499d4"/><h3 id="1d50b172-a8bf-80df-9acb-c545ec0b30f3" class=""><strong>Contact</strong></h3><p id="1d60b172-a8bf-80e2-9a70-f7ac727b0b6e" class="">If you have questions or concerns about this Privacy Statement or about Our use or retention of your PII or Personal Financial Data, please contact Us via email at <a href="mailto:connect@canopy.support">connect@canopy.cloud</a> or any other designated email address provided to you by Us, or through communication with the Designated Partner (if applicable), or via post mail, addressed to Canopy Pte. Ltd., Lazada One, 51 Bras Basah Road #05-01L Singapore 189554.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
